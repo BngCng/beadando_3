@@ -1,0 +1,5 @@
+---check---
+widget 2 spinbox 42 
+widget 3 spinbox 0 
+widget 4 Menu <poor code error> 
+widget 5 Menu <poor code error> 
