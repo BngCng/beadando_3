@@ -418,7 +418,21 @@
 	"widget_anc.hpp"
 	<vector>
 
-1683206543 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\main.cpp
+1684432484 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\main.cpp
+	"Game.hpp"
+
+1683205352 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\extendedmenu.hpp
+	"widget_anc.hpp"
+
+1683205352 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\emenu.cpp
+	"graphics.hpp"
+	<iostream>
+
+1684433330 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\game.hpp
+	<vector>
+	"widget_anc.hpp"
+
+1684433327 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\game.cpp
 	"graphics.hpp"
 	"widget_anc.hpp"
 	"spinbox.hpp"
@@ -427,11 +441,5 @@
 	<vector>
 	<iostream>
 	<fstream>
-
-1683205352 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\extendedmenu.hpp
-	"widget_anc.hpp"
-
-1683205352 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_2\emenu.cpp
-	"graphics.hpp"
-	<iostream>
+	"Game.hpp"
 
