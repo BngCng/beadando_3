@@ -3,7 +3,7 @@
 
 using namespace genv;
 
-spinbox::spinbox(int x, int y, int sx, int sy, int num, int mini, int maxi) : Widget(x,y,sx,sy),_num(num),minnum(mini),maxnum(maxi)
+spinbox::spinbox(int x, int y, int sx, int sy, int num, int mini, int maxi, std::string in) : Widget(x,y,sx,sy),_num(num),minnum(mini),maxnum(maxi),unit(in)
 {
 
 }
@@ -19,7 +19,7 @@ void spinbox::draw()
     << move(0,-(_size_y / 2)) << line(_size_x / 3,0) << line(-(_size_x / 6), -(_size_y / 2))
     << line(-(_size_x / 6), (_size_y / 2)) << line((_size_x / 6), (_size_y / 2)) << line((_size_x / 6), -(_size_y / 2))
 
-    << move_to(_x + _size_x/20, _y + _size_y/4) << font("LiberationSans-Regular.ttf",_size_y / 2) << text(std::to_string(_num));
+    << move_to(_x + _size_x/20, _y + _size_y/4) << font("LiberationSans-Regular.ttf",_size_y / 2) << text(std::to_string(_num)) << text(unit);
     handling = false;
 }
 

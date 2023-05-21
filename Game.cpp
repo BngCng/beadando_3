@@ -8,49 +8,67 @@
 #include <fstream>
 #include "Game.hpp"
 #include "GameWidget.hpp"
+#include "Tank.hpp"
 
 using namespace genv;
 using namespace std;
 
 Game::Game()
 {
-    GameWidget tankgame(1200, 900);
-    vector<Widget*> widgets;
-    spinbox* sp1 = new spinbox(10,10,100,50,42,40,50);
-    widgets.push_back(sp1);
-    spinbox* sp2 = new spinbox(10,65,200,70,0,-10,10);
-    widgets.push_back(sp2);
-
-    program(widgets);
+    program();
 }
 
-int Game::program(vector<Widget*>& widgets) {
+int Game::program() {
+
     event ev;
     gin.timer(20);
     int focus = -1;
 
+    vector<Widget*> widgets;
+    vector<Tank*> players;
+
+    GameWidget* current = new GameWidget(1200, 900); //jatekter megrajzolasa
+    current->draw();
+    gout.refresh();
+
+    Tank* player1 = new Tank(138,460,1,"p1tank.kep","Player #1");
+    players.push_back(player1);
+    Tank* player2 = new Tank(846,460,-1,"p2tank.kep","Player #2");
+    players.push_back(player2);
+    gout.refresh();
+
+    for(Tank* p : players)
+    {
+        p->drawinit();
+    }
+
+    // Widgetek letrehozasa, vektorba helyezese---------------------
+    spinbox* sp1 = new spinbox(400,600,200,100,45,0,70,"°");
+    widgets.push_back(sp1);
+    spinbox* sp2 = new spinbox(800,600,200,100,0,1,10,"");
+    widgets.push_back(sp2);
+
+
+
+
     while(gin >> ev && ev.keycode != key_escape) // van bemenet, fut a fõ program
     {
-        /*if (ev.type == ev_mouse && ev.button==btn_left) // ha kattintunk
-        {
-            focus = -1; //levesszuk a fokuszbol a widgetet
-            for (size_t i=0;i<widgets.size();i++) // fókuszba helyezzük a kattintott widgetet, ha van
-            {
-                if (widgets[i]->is_selected(ev.pos_x, ev.pos_y))
-                {
-                    focus = i;
-                }
-            }
-        }
-        if (focus!=-1) //kezeljük a fókuszált widgetet
-        {
-            widgets[focus]->handle(ev);
-        }*/
+
         for (Widget * w : widgets) // kirajzoljuk a megjelenítendõ widgeteket
         {
             w->draw();
             w->handle(ev);
         }
+
+
+        for (Tank * p : players)
+        {
+
+        }
+        player1->drawhpbar(20,570,100);
+        player2->drawhpbar(20,770,50);
+
+
         if(ev.keycode == key_lctrl) // filebaírás a bal ctrl megnyomása esetén
         {
             ofstream os;

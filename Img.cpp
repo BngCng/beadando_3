@@ -24,9 +24,8 @@ void Img::draw() // adott kep kirajzolsasara valo fuggveny
 void Img::handle(event ev)
 {}
 
-Img::Img(){}
 
-Img::Img(string filename) : Widget(), _filename(filename) // beolvasas a konstruktorban
+Img::Img(int x,int y, string filename) : _x(x), _y(y), _filename(filename) // beolvasas a konstruktorban
 {
     ifstream is;
     is.open(filename);

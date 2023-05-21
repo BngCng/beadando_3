@@ -19,8 +19,7 @@ class Img : public Widget
         vector<vector<pix>> img;
 
     public:
-        Img(std::string);
-        Img();
+        Img(int,int,std::string);
         void draw();
         void handle(genv::event);
         std::string actual();

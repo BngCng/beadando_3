@@ -4,7 +4,7 @@
 #include "widget_anc.hpp"
 #include "Img.hpp"
 
-// Grafikus megjelenítésért felelõs komponens
+// Háttér megrajzolása
 class GameWidget : public Widget
 {
     public:
@@ -13,8 +13,6 @@ class GameWidget : public Widget
         void handle(genv::event);
         std::string actual();
         std::string classname();
-    private:
-        Img bgi;
 };
 
 #endif // GAMEWIDGET_HPP

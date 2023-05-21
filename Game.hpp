@@ -1,6 +1,5 @@
 #ifndef GAME_HPP
 #define GAME_HPP
-#include <vector>
 #include "widget_anc.hpp"
 
 
@@ -10,7 +9,7 @@ class Game
         Game();
 
     protected:
-        int program(std::vector<Widget*>&);
+        int program();
 
     private:
 };

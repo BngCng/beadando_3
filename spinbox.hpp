@@ -7,7 +7,7 @@
 class spinbox : public Widget
 {
     public:
-        spinbox(int, int, int, int, int, int, int);
+        spinbox(int, int, int, int, int, int, int, std::string);
         void draw();
         void handle(genv::event);
         std::string actual();
@@ -16,6 +16,7 @@ class spinbox : public Widget
     protected:
         bool handling;
         int minnum, maxnum, _num;
+        std::string unit;
 };
 
 #endif // SPINBOX_HPP
