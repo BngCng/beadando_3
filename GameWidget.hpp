@@ -2,22 +2,19 @@
 #define GAMEWIDGET_HPP
 
 #include "widget_anc.hpp"
+#include "Img.hpp"
 
 // Grafikus megjelenítésért felelõs komponens
 class GameWidget : public Widget
 {
     public:
-        GameWidget();
-
-    protected:
-        struct pix //pixel felepitese
-{
-    unsigned char r,g,b;
-    pix(int rr, int gg, int bb) : r(rr), g(gg), b(bb){}
-};
-
-
+        GameWidget(int, int);
+        void draw();
+        void handle(genv::event);
+        std::string actual();
+        std::string classname();
     private:
+        Img bgi;
 };
 
 #endif // GAMEWIDGET_HPP

@@ -843,7 +843,7 @@
 	<vector>
 	"widget_anc.hpp"
 
-1683206933 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc.hpp
+1684671895 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc.hpp
 	"graphics.hpp"
 
 1677893378 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\include\graphics.hpp
@@ -858,18 +858,18 @@
 	"widget_anc.hpp"
 	<vector>
 
-1683207313 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\spinbox.cpp
+1684668680 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\spinbox.cpp
 	"spinbox.hpp"
 	"graphics.hpp"
 
-1683207313 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\spinbox.hpp
+1684671119 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\spinbox.hpp
 	"widget_anc.hpp"
 
-1682871808 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc_.cpp
+1684671895 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc_.cpp
 	"widget_anc.hpp"
 	"graphics.hpp"
 
-1684433327 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\game.cpp
+1684671895 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\game.cpp
 	"graphics.hpp"
 	"widget_anc.hpp"
 	"spinbox.hpp"
@@ -879,7 +879,28 @@
 	<iostream>
 	<fstream>
 	"Game.hpp"
+	"GameWidget.hpp"
 
 1683205352 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\extendedmenu.hpp
 	"widget_anc.hpp"
+
+1684672815 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\gamewidget.cpp
+	"GameWidget.hpp"
+	"graphics.hpp"
+	"Img.hpp"
+
+1684672568 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\gamewidget.hpp
+	"widget_anc.hpp"
+	"Img.hpp"
+
+1684673462 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\img.cpp
+	"Img.hpp"
+	"graphics.hpp"
+	<vector>
+	<iostream>
+	<fstream>
+
+1684673367 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\img.hpp
+	"widget_anc.hpp"
+	<vector>
 

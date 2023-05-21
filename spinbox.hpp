@@ -10,8 +10,8 @@ class spinbox : public Widget
         spinbox(int, int, int, int, int, int, int);
         void draw();
         void handle(genv::event);
-        std::string classname(); //kiirashoz
-        std::string actual(); //kiirashoz
+        std::string actual();
+        std::string classname();
 
     protected:
         bool handling;
