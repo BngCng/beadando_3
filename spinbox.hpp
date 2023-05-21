@@ -12,10 +12,11 @@ class spinbox : public Widget
         void handle(genv::event);
         std::string actual();
         std::string classname();
+        int _num;
 
     protected:
         bool handling;
-        int minnum, maxnum, _num;
+        int minnum, maxnum;
         std::string unit;
 };
 

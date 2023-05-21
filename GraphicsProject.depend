@@ -842,7 +842,7 @@
 1684681971 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\game.hpp
 	"widget_anc.hpp"
 
-1684671895 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc.hpp
+1684691835 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc.hpp
 	"graphics.hpp"
 
 1677893378 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\include\graphics.hpp
@@ -861,14 +861,14 @@
 	"spinbox.hpp"
 	"graphics.hpp"
 
-1684688581 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\spinbox.hpp
+1684691811 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\spinbox.hpp
 	"widget_anc.hpp"
 
-1684686471 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc_.cpp
+1684691835 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\widget_anc_.cpp
 	"widget_anc.hpp"
 	"graphics.hpp"
 
-1684690589 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\game.cpp
+1684704812 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\game.cpp
 	"graphics.hpp"
 	"widget_anc.hpp"
 	"spinbox.hpp"
@@ -894,24 +894,25 @@
 	"widget_anc.hpp"
 	"Img.hpp"
 
-1684686839 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\img.cpp
+1684703161 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\img.cpp
 	"Img.hpp"
 	"graphics.hpp"
 	<vector>
 	<iostream>
 	<fstream>
 
-1684685648 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\img.hpp
+1684703949 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\img.hpp
 	"widget_anc.hpp"
 	<vector>
 
-1684690853 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\tank.cpp
+1684704465 source:e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\tank.cpp
 	"Tank.hpp"
 	"Img.hpp"
 	"graphics.hpp"
 	<iostream>
 	<cmath>
 
-1684690082 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\tank.hpp
+1684705177 e:\felhasználók\cucud\documents\ppke itk\3. felev\bevprog 2\beadando_3\beadando_3\tank.hpp
 	"widget_anc.hpp"
+	"Img.hpp"
 

@@ -8,6 +8,8 @@ using namespace std;
 using namespace genv;
 
 
+
+
 Tank::Tank(int x, int y, int d, string in, string n)
 : Widget(x,y,0,0), _imgname(in), name(n), direction(d)
 {
@@ -20,6 +22,7 @@ void Tank::drawinit()
 {
     cout << "tankertekek" << _x << " " << _y << endl;
     Img tanki(_x,_y,_imgname);
+
     tanki.draw();
 }
 
@@ -33,9 +36,16 @@ void Tank::handle(event ev)
 
 }
 
-void Tank::drawturret(int r, int g, int b, int sx, int sy, int incl)
+void Tank::drawturret(int r, int g, int b, int sx, int sy)
 {
-    gout << move_to(sx,sy) << color(r,g,b) << line(direction*30*cos(incl),sin(incl));
+    gout << move_to(_x+sx,_y+sy) << color(r,g,b) << line(direction*lx*cos(incline)-ly*sin(incline),lx*sin(incline)+ly*cos(incline));
+    if(previncline != incline)
+    {
+        lx = gout.x();
+        ly = gout.y();
+        previncline = incline;
+    }
+
 }
 
 void Tank::drawhpbar(int x, int y, int hp)

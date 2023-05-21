@@ -14,7 +14,7 @@ public:
     {
 
     };
-    //virtual bool is_selected(int mouse_x, int mouse_y);
+    virtual bool is_selected(int mouse_x, int mouse_y);
     virtual void draw() = 0;
     virtual void handle(genv::event ev) = 0;
     virtual std::string actual() = 0;

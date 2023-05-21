@@ -20,6 +20,7 @@ class Img : public Widget
 
     public:
         Img(int,int,std::string);
+        Img();
         void draw();
         void handle(genv::event);
         std::string actual();
