@@ -1,6 +1,6 @@
 #include "GameWidget.hpp"
 
-GameWidget::GameWidget()
+GameWidget::GameWidget(int x, int y, int sx, int sy) : Widget()
 {
     //ctor
 }
